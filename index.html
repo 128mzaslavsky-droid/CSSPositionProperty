@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position: static demo</title>
+    <style>
+    body {
+        background-image: url('CSS-Position.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <div style="position: static; top: 50px; left: 50px; background-color: lightblue; padding: 20px;">
+        This div is positioned with <code>position: static</code>. The <code>top</code> and <code>left</code> properties have no effect.
+    </div>
+        <div style="margin-top: 20px; background-color: lightgreen; padding: 20px;">
+            This div is below the first div, demonstrating normal document flow.
+        </div>
+        <div style="margin-top: 20px; background-color: lightcoral; padding: 20px;">
+            Another div to show the stacking of elements in normal flow.
+            </div>
+        <div style="margin-top: 20px; background-color: lightgoldenrodyellow; padding: 20px;">
+            Yet another div to illustrate the effect of <code>position: static</code>.
+        </div>
+        <h1>Understanding position: static</h1>
+        <p>
+            The <code>position: static</code> is the default positioning for HTML elements. Elements with this positioning are placed according to the normal flow of the document. This means that they will appear in the order they are written in the HTML, and any positioning properties like <code>top</code>, <code>left</code>, <code>right</code>, and <code>bottom</code> will not affect their placement.
+        </p>
+        <div style="margin-top: 20px; background-color: lightgray; padding: 20px;">
+            This div further emphasizes that <code>position: static</code> elements stack naturally in the document flow.
+        </div>
+        <div style="margin-top: 20px; background-color: lightpink; padding: 20px;">
+            This is the last div in the example, showing consistent behavior of <code>position: static</code>.
+        </div>
+        <h1>Key points to remember</h1>
+        <ul>
+            <li>Elements with <code>position: static</code> follow the normal document flow.</li>
+            <li>Positioning properties like <code>top</code>, <code>left</code>, <code>right</code>, and <code>bottom</code> do not affect static elements.</li>
+            <li>This is the default positioning for all HTML elements unless otherwise specified.</li>
+        </ul>
+    </body>
