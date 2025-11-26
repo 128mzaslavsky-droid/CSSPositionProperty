@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position Example</title>
+    <a href="index.html">Static position</a>
+    <a href="fixed.html">Fixed position</a>
+    <a href="relative.html">Relative position</a>
+    <a href="absolute.html">Absolute position</a>
+    <a href="sticky.html">Sticky position</a>
+    <style>
+    body {
+        background-image: url('CSS-Position.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <img src="CSS-Position.jpg" alt="CSS Positioning" style="display:none;">
+    <div style="position: fixed; top: 10px; right: 10px; background-color: lightblue; padding: 10px;">
+        This div is fixed in the top-right corner.
+    </div>
+    <div style="margin-top: 100px; background-color: lightgreen; padding: 20px;">
+        This div is below the fixed div, demonstrating normal document flow.
+    </div>
+    <div style="margin-top: 20px; background-color: lightcoral; padding: 20px;">
+        Another div to show the stacking of elements in normal flow.
+    </div>
+    <div style="position: fixed; top: 20px; background-color: lightgoldenrodyellow; padding: 20px;">
+        Yet another div to illustrate the effect of <code>position: fixed</code>.
+    </div>
+    <h1>Understanding position: fixed</h1>
+    <p>
+        The <code>position: fixed</code> property positions an element relative to the viewport, which means it always stays in the same place even if the page is scrolled. Fixed positioned elements do not move when the user scrolls the page.
+    </p>
+    <div style="margin-top: 20px; background-color: lightgray; padding: 20px;">
+        This div further emphasizes that <code>position: fixed</code> elements remain in place while other content scrolls.
+    </div>
+    <div style="margin-top: 20px; background-color: lightpink; padding: 20px;">
+        This is the last div in the example, showing consistent behavior of <code>position: fixed</code>.
+    </div>
+    <h1>Key points to remember</h1>
+    <ul>
+        <li>Elements with <code>position: fixed</code> are positioned relative to the viewport.</li>
+        <li>Fixed elements remain in the same position even when the page is scrolled.</li>
+        <li>They are removed from the normal document flow, so other elements behave as if the fixed element does not exist.</li>
+        <li>Fixed elements can overlap other content because they are taken out of the normal flow.</li>
+    </ul>
+  </body>
+</html>
