@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Path Example</title>
+</head>
+<body>
+    <a href="index.html">Static position</a>
+    <a href="fixed.html">Fixed position</a>
+    <a href="relative.html">Relative position</a>
+    <a href="absolute.html">Absolute position</a>
+    <a href="sticky.html">Sticky position</a>
+    <h1>Understanding absolute paths in HTML</h1>
+    <p>
+        An absolute path in HTML specifies the full URL or file path to a resource, starting from the root directory. This means that the path is complete and does not depend on the location of the HTML file that references it.
+    </p>
+    <h2>Example of an absolute path:</h2>
+    <p>
+        If you have an image located at <code>https://www.example.com/images/photo.jpg</code>, you would use the following HTML code to include it in your webpage:
+    </p>
+    <pre>&lt;img src="https://www.example.com/images/photo.jpg" alt="Example Photo"&gt;</pre>
+    <h2>Key points to remember about absolute paths:</h2>
+    <ul>
+        <li>Absolute paths start from the root directory and include the full URL or file path.</li>
+        <li>They are useful when linking to resources that are hosted on different domains or servers.</li>
+        <li>Using absolute paths ensures that the resource can be accessed regardless of the location of the HTML file.</li>
+        <li>However, they can make your code less portable if you move your files to a different domain or server.</li>
+    </ul>
+</body>
+</html>
